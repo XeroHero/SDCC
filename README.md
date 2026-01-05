@@ -13,7 +13,6 @@ A Raspberry Pi-based device that automatically clones SD card contents to an ext
 
 ### Complete System Design - Hardware Setup
 
-
 Components:
 1. Raspberry Pi (any model with USB ports)
 2. Physical push button (momentary switch)
@@ -26,7 +25,11 @@ Components:
 
 ### Wiring Diagram
 
-Button: GPIO17 (pin 11) to GND (pull-up internally)
-Red LED:   GPIO22 (pin 15) → Resistor → GND (Error/Ready)
-Yellow LED: GPIO23 (pin 16) → Resistor → GND (Cloning in progress)
-Green LED:  GPIO24 (pin 18) → Resistor → GND (Complete)
+- Button: GPIO17 (pin 11) to GND (pull-up internally)
+- Red LED:   GPIO22 (pin 15) → Resistor → GND (Error/Ready)
+- Yellow LED: GPIO23 (pin 16) → Resistor → GND (Cloning in progress)
+- Green LED:  GPIO24 (pin 18) → Resistor → GND (Complete)
+
+### Software Setup
+1. Clone the repository
+2. Install the dependencies usign the install_cloner.sh script
